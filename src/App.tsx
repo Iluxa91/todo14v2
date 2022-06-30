@@ -54,7 +54,7 @@ function App() {
     }, []);
 
     const changeStatus = useCallback(function (id: string, status: TaskStatuses, todolistId: string) {
-        const thunk = updateTaskStatus(id, todolistId,status);
+        const thunk = updateTaskStatus(id, todolistId, status);
         dispatch(thunk);
     }, []);
 
