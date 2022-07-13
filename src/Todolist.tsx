@@ -55,6 +55,7 @@ export const Todolist = React.memo(function (props: PropsType) {
         tasksForTodolist = props.tasks.filter(t => t.status === TaskStatuses.Completed)
     }
     const dispatch = useDispatch()
+
     useEffect(()=>{
         dispatch(fetchTasksTC(props.id))
     },[])
